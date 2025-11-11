@@ -1,0 +1,111 @@
+{
+  "index.qmd": {
+    "index.html": "8c32431b",
+    "index.tex": "e5827206"
+  },
+  "corpus.qmd": {
+    "corpus-preview.html": "f778f7a9",
+    "corpus.embed.ipynb": "842e091c",
+    "corpus.out.ipynb": "b4443990"
+  },
+  "corpus_simple_qmd/1959-05-20_youth-march.qmd": {
+    "1959-05-20_youth-march-preview.html": "caf5d57f",
+    "1959-05-20_youth-march.embed.ipynb": "44ff107c",
+    "1959-05-20_youth-march.out.ipynb": "74784bc9"
+  },
+  "corpus_simple_qmd/1965-03-25_marching-on.qmd": {
+    "1965-03-25_marching-on-preview.html": "2bc95514",
+    "1965-03-25_marching-on.embed.ipynb": "13d3b136",
+    "1965-03-25_marching-on.out.ipynb": "4fd635ed"
+  },
+  "corpus_simple_qmd/1964-12-11_nobel-lecture.qmd": {
+    "1964-12-11_nobel-lecture-preview.html": "3766c9ea",
+    "1964-12-11_nobel-lecture.embed.ipynb": "3a29a428",
+    "1964-12-11_nobel-lecture.out.ipynb": "f236726e"
+  },
+  "corpus_simple_qmd/1961-09-10_time-for-freedom.qmd": {
+    "1961-09-10_time-for-freedom-preview.html": "1ed98161",
+    "1961-09-10_time-for-freedom.embed.ipynb": "09f27c0b",
+    "1961-09-10_time-for-freedom.out.ipynb": "c1e5e1ab"
+  },
+  "corpus_simple_qmd/1967-06-11_black-power.qmd": {
+    "1967-06-11_black-power-preview.html": "4b5bdbeb",
+    "1967-06-11_black-power.embed.ipynb": "5d9b302b",
+    "1967-06-11_black-power.out.ipynb": "79511525"
+  },
+  "corpus_simple_qmd/1964-12-10_nobel-prize.qmd": {
+    "1964-12-10_nobel-prize-preview.html": "5370f0f0",
+    "1964-12-10_nobel-prize.embed.ipynb": "3ae13b7c",
+    "1964-12-10_nobel-prize.out.ipynb": "7bab9afb"
+  },
+  "corpus_simple_qmd/1967-08-16_where-do-we-go.qmd": {
+    "1967-08-16_where-do-we-go-preview.html": "8d7eb79b",
+    "1967-08-16_where-do-we-go.embed.ipynb": "c0709736",
+    "1967-08-16_where-do-we-go.out.ipynb": "315786bb"
+  },
+  "corpus_simple_qmd/1967-04-04_break-silence.qmd": {
+    "1967-04-04_break-silence-preview.html": "352f05c9",
+    "1967-04-04_break-silence.embed.ipynb": "633c57e0",
+    "1967-04-04_break-silence.out.ipynb": "07896c3c"
+  },
+  "corpus_simple_qmd/1968-02-04_drum-major.qmd": {
+    "1968-02-04_drum-major-preview.html": "f39622c9",
+    "1968-02-04_drum-major.embed.ipynb": "d10e20d5",
+    "1968-02-04_drum-major.out.ipynb": "1a4eb8cc"
+  },
+  "corpus_simple_qmd/1959-10-01_social-nonviolence.qmd": {
+    "1959-10-01_social-nonviolence-preview.html": "7f0ca477",
+    "1959-10-01_social-nonviolence.embed.ipynb": "1a19f89a",
+    "1959-10-01_social-nonviolence.out.ipynb": "08add35d"
+  },
+  "corpus_simple_qmd/1966-10-01_nonviolence-only-road.qmd": {
+    "1966-10-01_nonviolence-only-road-preview.html": "9d45cbac",
+    "1966-10-01_nonviolence-only-road.embed.ipynb": "62a7bfee",
+    "1966-10-01_nonviolence-only-road.out.ipynb": "41f84598"
+  },
+  "corpus_simple_qmd/1956-12-03_new-age.qmd": {
+    "1956-12-03_new-age-preview.html": "cb970f1a",
+    "1956-12-03_new-age.embed.ipynb": "4561f1fe",
+    "1956-12-03_new-age.out.ipynb": "0f681821"
+  },
+  "corpus_simple_qmd/1963-09-18_eulogy.qmd": {
+    "1963-09-18_eulogy-preview.html": "95393eb4",
+    "1963-09-18_eulogy.embed.ipynb": "c55dfba9",
+    "1963-09-18_eulogy.out.ipynb": "cf392da9"
+  },
+  "corpus_simple_qmd/1959-07-01_land-of-gandhi.qmd": {
+    "1959-07-01_land-of-gandhi-preview.html": "347de8f3",
+    "1959-07-01_land-of-gandhi.embed.ipynb": "0af81acc",
+    "1959-07-01_land-of-gandhi.out.ipynb": "30194681"
+  },
+  "corpus_simple_qmd/1968-04-03_promised-land.qmd": {
+    "1968-04-03_promised-land-preview.html": "a172afe1",
+    "1968-04-03_promised-land.embed.ipynb": "7c4c8896",
+    "1968-04-03_promised-land.out.ipynb": "90890575"
+  },
+  "corpus_simple_qmd/1956-04-01_our-struggle.qmd": {
+    "1956-04-01_our-struggle-preview.html": "3691fcd8",
+    "1956-04-01_our-struggle.embed.ipynb": "3b24c534",
+    "1956-04-01_our-struggle.out.ipynb": "b7fb427e"
+  },
+  "corpus_simple_qmd/1957-06-24_nonviolence.qmd": {
+    "1957-06-24_nonviolence-preview.html": "b20b9e02",
+    "1957-06-24_nonviolence.embed.ipynb": "5e55b5f9",
+    "1957-06-24_nonviolence.out.ipynb": "897a4b47"
+  },
+  "corpus_simple_qmd/1963-08-28_dream.qmd": {
+    "1963-08-28_dream-preview.html": "5ae0c066",
+    "1963-08-28_dream.embed.ipynb": "6c4e49aa",
+    "1963-08-28_dream.out.ipynb": "eab4cc06"
+  },
+  "corpus_simple_qmd/1963-04-16_birmingham-jail.qmd": {
+    "1963-04-16_birmingham-jail-preview.html": "a3635492",
+    "1963-04-16_birmingham-jail.embed.ipynb": "e9ad9729",
+    "1963-04-16_birmingham-jail.out.ipynb": "24c9e2f9"
+  },
+  "corpus_simple_qmd/1960-04-13_pilgrimage.qmd": {
+    "1960-04-13_pilgrimage-preview.html": "5cf08554",
+    "1960-04-13_pilgrimage.embed.ipynb": "b806cf2f",
+    "1960-04-13_pilgrimage.out.ipynb": "912b9e85"
+  }
+}

@@ -1,0 +1,40 @@
+---
+title: "'Elected on Friday, Assassinated on Saturday': Text-Analyzing Political Assassinations"
+title-block-banner: "#E69F0095"
+title-block-banner-color: "black"
+authors:
+  - name: Jeff Jacobs
+    affiliation:
+      - Georgetown University Department of Data Science and McCourt School of Public Policy
+    corresponding: true
+bibliography: Elected_on_Friday.bib
+listing:
+  - id: corpus
+    contents: "corpus_simple_qmd/*.qmd"
+    type: table
+---
+
+> *If I was president, I'd get elected on Friday, assassinated on Saturday, buried on Sunday, then go back to work on Monday.*
+> 
+> @wyclefjean_president_2004
+
+## Introduction
+
+## Data
+
+Corpus of texts [here](corpus.qmd).
+
+## Results
+
+## Conclusion
+
+## References
+
+::: {#refs}
+:::
+
+## Corpus
+
+::: {#corpus}
+:::
+
