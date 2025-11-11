@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.8.25">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <title>land-of-gandhi</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "../index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="../site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a74871fe4945b66d259aafc266475145.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+     
+      </head>
+
+  <body class="quarto-notebook quarto-light">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> 1959-07-01_land-of-gandhi.qmd</h6>
+
+            <a href="../corpus_simple_qmd/1959-07-01_land-of-gandhi.qmd" class="btn btn-primary quarto-download-embed" download="1959-07-01_land-of-gandhi.qmd">Download Source</a>
+          </div>
+
+     <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">    <p>My Trip to the Land of Gandhi</p>
+<p>For a long time I had wanted to take a trip to India. Even as a child the entire Orient held a strange fascination for me—the elephants, the tigers, the temples, the snake charmers and all the other storybook characters.</p>
+<p>While the Montgomery boycott was going on, India’s Gandhi was the guiding light of our technique of nonviolent social change. We spoke of him often. So as soon as our victory over bus segregation was won, some of my friends said: “Why don’t you go to India and see for yourself what the Mahatma, whom you so admire, has wrought.”</p>
+<p>In 1956 when Pandit Jawaharlal Nehru, India’s prime minister, made a short visit to the United States, he was gracious enough to say that he wished that he and I had met and had his diplomatic representatives make inquiries as to the possibility of my visiting his country some time soon. Our former American ambassador to India, Chester Bowles, wrote me along the same lines.</p>
+<p>But every time that I was about to make the trip, something would interfere. At one time it was my visit by prior commitment to Ghana. At another time my publishers were pressing me to finish writing Stride Toward Freedom. Then along came Mrs.&nbsp;Izola Ware Curry. When she struck me with that Japanese letter opener on that Saturday afternoon in September as I sat autographing books in a Harlem store, she not only knocked out the travel plans that I had but almost everything else as well.</p>
+<p>After I recovered from this near-fatal encounter and was finally released by my doctors, it occurred to me that it might be better to get in the trip to India before plunging too deeply once again into the sea of the southern segregation struggle.</p>
+<p>I preferred not to take this long trip alone and asked my wife and my friend, Lawrence Reddick, to accompany me. Coretta was particularly interested in the women of India and Dr.&nbsp;Reddick in the history and government of that great country. He had written my biography, Crusader Without Violence, and said that my true test would come when the people who knew Gandhi looked me over and passed judgment upon me and the Montgomery movement. The three of us made up a sort of three-headed team with six eyes and six ears for looking and listening.</p>
+<p>The Christopher Reynolds Foundation made a grant through the American Friends Service Committee to cover most of the expenses of the trip and the Southern Christian Leadership Conference and the Montgomery Improvement Association added their support. The Gandhi Memorial Trust of India extended an official invitation, through diplomatic channels, for our visit.</p>
+<p>And so on February 3, 1959, just before midnight, we left New York by plane. En route we stopped in Paris with Richard Wright, an old friend of Reddick’s, who brought us up to date on European attitudes on the Negro question and gave us a taste of the best French cooking.</p>
+<p>We missed our plane connection in Switzerland because of fog, arriving in India after a roundabout route, two days late. But from the time we came down out of the clouds at Bombay on February 10, until March 10, when we waved goodbye at the New Delhi airport, we had one of the most concentrated and eye-opening experiences of our lives. There is so much to tell that I can only touch upon a few of the high points.</p>
+<p>At the outset, let me say that we had a grand reception in India. The people showered upon us the most generous hospitality imaginable. We were graciously received by the prime minister, the president and the vice-president of the nation; members of Parliament, governors and chief ministers of various Indian states; writers, professors, social reformers and at least one saint. Since our pictures were in the newspapers very often it was not unusual for us to be recognized by crowds in public places and on public conveyances. Occasionally I would take a morning walk in the large cities, and out of the most unexpected places someone would emerge and ask: “Are you Martin Luther King?”</p>
+<p>Virtually every door was open to us. We had hundreds of invitations that the limited time did not allow us to accept. We were looked upon as brothers with the color of our skins as something of an asset. But the strongest bond of fraternity was the common cause of minority and colonial peoples in America, Africa and Asia struggling to throw off racialism and imperialism.</p>
+<p>We had the opportunity to share our views with thousands of Indian people through endless conversations and numerous discussion sessions. I spoke before university groups and public meetings all over India. Because of the keen interest that the Indian people have in the race problem these meetings were usually packed. Occasionally interpreters were used, but on the whole I spoke to audiences that understood English.</p>
+<p>The Indian people love to listen to the Negro spirituals. Therefore, Coretta ended up singing as much as I lectured. We discovered that autograph seekers are not confined to America. After appearances in public meetings and while visiting villages we were often besieged for autographs. Even while riding planes, more than once pilots came into the cabin from the cockpit requesting our signatures.</p>
+<p>We got a good press throughout our stay. Thanks to the Indian papers, the Montgomery bus boycott was already well known in that country. Indian publications perhaps gave a better continuity of our 381-day bus strike than did most of our papers in the United States. Occasionally I meet some American fellow citizen who even now asks me how the bus boycott is going, apparently never having read that our great day of bus integration, December 21, 1956, closed that chapter of our history.</p>
+<p>We held press conferences in all of the larger cities—Delhi, Calcutta, Madras and Bombay—and talked with newspapermen almost everywhere we went. They asked sharp questions and at times appeared to be hostile but that was just their way of bringing out the story that they were after. As reporters, they were scrupulously fair with us and in their editorials showed an amazing grasp of what was going on in America and other parts of the world.</p>
+<p>The trip had a great impact upon me personally. It was wonderful to be in Gandhi’s land, to talk with his son, his grandsons, his cousins and other relatives; to share the reminiscences of his close comrades, to visit his ashrama, to see the countless memorials for him and finally to lay a wreath on his entombed ashes at Rajghat. I left India more convinced than ever before that nonviolent resistance is the most potent weapon available to oppressed people in their struggle for freedom. It was a marvelous thing to see the amazing results of a nonviolent campaign. The aftermath of hatred and bitterness that usually follows a violent campaign was found nowhere in India. Today a mutual friendship based on complete equality exists between the Indian and British people within the commonwealth. The way of acquiescence leads to moral and spiritual suicide. The way of violence leads to bitterness in the survivors and brutality in the destroyers. But, the way of nonviolence leads to redemption and the creation of the beloved community.</p>
+<p>The spirit of Gandhi is very much alive in India today. Some of his disciples have misgivings about this when they remember the drama of the fight for national independence and when they look around and find nobody today who comes near the stature of the Mahatma. But any objective observer must report that Gandhi is not only the greatest figure in India’s history but that his influence is felt in almost every aspect of life and public policy today.</p>
+<p>India can never forget Gandhi. For example, the Gandhi Memorial Trust (also known as the Gandhi Smarak Nidhi) collected some $130 million soon after the death of “the father of the nation.” This was perhaps the largest, spontaneous, mass monetary contribution to the memory of a single individual in the history of the world. This fund, along with support from the Government and other institutions, is resulting in the spread and development of Gandhian philosophy, the implementing of his constructive program, the erection of libraries and the publication of works by and about the life and times of Gandhi. Posterity could not escape him even if it tried. By all standards of measurement, he is one of the half-dozen greatest men in world history.</p>
+<p>I was delighted that the Gandhians accepted us with open arms. They praised our experiment with the nonviolent resistance technique at Montgomery. They seem to look upon it as an outstanding example of the possibilities of its use in Western civilization. To them as to me it also suggests that nonviolent resistance when planned and positive in action can work effectively even under totalitarian regimes.</p>
+<p>We argued this point at some length with the groups of African students who are today studying in India. They felt that nonviolent resistance could only work in a situation where the resisters had a potential ally in the conscience of the opponent. We soon discovered that they, like many others, tended to confuse passive resistance with nonresistance. This is completely wrong. True nonviolent resistance is not unrealistic submission to evil power. It is rather a courageous confrontation of evil by the power of love, in the faith that it is better to be the recipient of violence than the inflictor of it, since the latter only multiplies the existence of violence and bitterness in the universe, while the former may develop a sense of shame in the opponent, and thereby bring about a transformation and change of heart.</p>
+<p>Nonviolent resistance does call for love, but it is not a sentimental love. It is a very stern love that would organize itself into collective action to right a wrong by taking on itself suffering. While I understand the reasons why oppressed people often turn to violence in their struggle for freedom, it is my firm belief that the crusade for independence and human dignity that is now reaching a climax in Africa will have a more positive effect on the world, if it is waged along the lines that were first demonstrated in that continent by Gandhi himself.</p>
+<p>India is a vast country with vast problems. We flew over the long stretches, from north to south, east to west; took trains for shorter jumps and used automobiles and jeeps to get us into the less accessible places.</p>
+<p>India is about a third the size of the United States but has almost three times as many people. Everywhere we went we saw crowded humanity—on the roads, in the city streets and squares, even in the villages.</p>
+<p>Most of the people are poor and poorly dressed. The average income per person is less than seventy dollars per year. Nevertheless, their turbans for their heads, loose-flowing, wrap-around dhotis that they wear instead of trousers and the flowing saris that the women wear instead of dresses are colorful and picturesque. Many Indians wear part native and part Western dress.</p>
+<p>We think that we in the United States have a big housing problem, but in the city of Bombay, for example, over a half-million people sleep out of doors every night. These are mostly unattached, unemployed or partially employed males. They carry their bedding with them like foot soldiers and unroll it each night in any unoccupied space they can find—on the sidewalk, in a railroad station or at the entrance of a shop that is closed for the evening.</p>
+<p>The food shortage is so widespread that it is estimated that less than thirty percent of the people get what we would call three square meals a day. During our great depression of the 1930s, we spoke of “a third of a nation” being “ill-housed, ill clad and ill fed.” For India today, simply change one-third to two-thirds in that statement and that would make it about right.</p>
+<p>As great as is unemployment, under-employment is even greater. Seventy percent of the Indian people are classified as agricultural workers and most of these do less than two hundred days of farm labor per year because of the seasonal fluctuations and other uncertainties of mother nature. Jobless men roam the city streets.</p>
+<p>Great ills flow from the poverty of India but strangely there is relatively little crime. Here is another concrete manifestation of the wonderful spiritual quality of the Indian people. They are poor, jammed together and half starved but they do not take it out on each other. They are a kindly people. They do not abuse each other—verbally or physically—as readily as we do. We saw but one fist fight in India during our stay.</p>
+<p>In contrast to the poverty-stricken, there are Indians who are rich, have luxurious homes, landed estates, fine clothes and show evidence of overeating. The bourgeoisie—white, black or brown—behaves about the same the world over.</p>
+<p>And then there is, even here, the problem of segregation. We call it race in America; they call it caste in India. In both places it means that some are considered inferior, treated as though they deserve less.</p>
+<p>We were surprised and delighted to see that India has made greater progress in the fight against caste “untouchability” than we have made here in our own country against race segregation. Both nations have federal laws against discrimination (acknowledging, of course, that the decision of our Supreme Court is the law of our land). But after this has been said, we must recognize that there are great differences between what India has done and what we have done on a problem that is very similar. The leaders of India have placed their moral power behind their law. From the Prime Minister down to the village councilmen, everybody declares publicly that untouchability is wrong. But in the United States some of our highest officials decline to render a moral judgment on segregation and some from the South publicly boast of their determination to maintain segregation. This would be unthinkable in India.</p>
+<p>Moreover, Gandhi not only spoke against the caste system but he acted against it. He took “untouchables” by the hand and led them into the temples from which they had been excluded. To equal that, President Eisenhower would take a Negro child by the hand and lead her into Central High School in Little Rock.</p>
+<p>Gandhi also renamed the untouchables, calling them “Harijans” which means “children of God.”</p>
+<p>The government has thrown its full weight behind the program of giving the Harijans an equal chance in society—especially when it comes to job opportunities, education, and housing.</p>
+<p>India’s leaders, in and out of government, are conscious of their country’s other great problems and are heroically grappling with them. The country seems to be divided. Some say that India should become Westernized and modernized as quickly as possible so that she might raise her standards of living. Foreign capital and foreign industry should be invited in, for in this lies the salvation of the almost desperate situation.</p>
+<p>On the other hand, there are others—perhaps the majority—who say that Westernization will bring with it the evils of materialism, cutthroat competition and rugged individualism; that India will lose her soul if she takes to chasing Yankee dollars; and that the big machine will only raise the living standards of the comparative few workers who get jobs but that the greater number of people will be displaced and will thus be worse off than they are now.</p>
+<p>Prime Minister Nehru, who is at once an intellectual and a man charged with the practical responsibility of heading the government, seems to steer a middle course between these extreme attitudes. In our talk with him he indicated that he felt that some industrialization was absolutely necessary; that there were some things that only big or heavy industry could do for the country but that if the state keeps a watchful eye on the developments, most of the pitfalls may be avoided.</p>
+<p>At the same time, Mr.&nbsp;Nehru gives support to the movement that would encourage and expand the handicraft arts such as spinning and weaving in home and village and thus leave as much economic self-help and autonomy as possible to the local community.</p>
+<p>There is a great movement in India that is almost unknown in America. At its center is the campaign for land reform known as Bhoodan. It would solve India’s great economic and social change by consent, not by force. The Bhoodanists are led by the saints Vinoba Bhave and Jayaprakash Narayan, a highly sensitive intellectual, who was trained in American colleges. Their ideal is self-sufficiency. Their program envisions:</p>
+<ol type="1">
+<li><p>Persuading large landowners to give up some of their holding to landless peasants;</p></li>
+<li><p>Persuading small landowners to give up their individual ownership for common cooperative ownership by the villages;</p></li>
+<li><p>Encouraging farmers and villagers to spin and weave the cloth for their own clothes during their spare time from their agricultural pursuits.</p></li>
+</ol>
+<p>Since these measures would answer the questions of employment, food and clothing, the village could then, through cooperative action, make just about everything that it would need or get it through bartering and exchange from other villages. Accordingly, each village would be virtually self-sufficient and would thus free itself from the domination of the urban centers that are today like evil lodestones drawing the people away from the rural areas, concentrating them in city slums and debauching them with urban vices. At least this is the argument of the Bhoodanists and other Gandhians.</p>
+<p>Such ideas sound strange and archaic to Western ears. However, the Indians have already achieved greater results than we Americans would ever expect. For example, millions of acres of land have been given up by rich landlords and additional millions of acres have been given up to cooperative management by small farmers. On the other hand, the Bhoodanists shrink from giving their movement the organization and drive that we in America would venture to guess that it must have in order to keep pace with the magnitude of the problems that everybody is trying to solve.</p>
+<p>Even the government’s five-year plans fall short in that they do not appear to be of sufficient scope to embrace their objectives. Thus, the three five-year plans were designed to provide twenty-five million new jobs over a fifteen-year period but the birth rate of India is six million per year. This means that in fifteen years there will be nine million more people (less those who have died or retired) looking for the fifteen million new jobs. In other words, if the planning were one hundred percent successful, it could not keep pace with the growth of problems it is trying to solve.</p>
+<p>As for what should be done, we surely do not have the answer. But we do feel certain that India needs help. She must have outside capital and technical know-how. It is in the interest of the United States and the West to help supply these needs and not attach strings to the gifts.</p>
+<p>Whatever we do should be done in a spirit of international brotherhood, not national selfishness. It should be done not merely because it is diplomatically expedient, but because it is morally correct. At the same time, it will rebound to the credit of the West if India is able to maintain her democracy while solving her problems.</p>
+<p>It would be a boon to democracy if one of the great nations of the world, with almost four hundred million people, proves that it is possible to provide a good living for everyone without surrendering to a dictatorship of either the “right” or “left.” Today India is a tremendous force for peace and nonviolence, at home and abroad. It is a land where the idealist and the intellectual are yet respected. We should want to help India preserve her soul and thus help to save our own.</p>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>  </div> <!-- /content --> 
+  
+</body></html>

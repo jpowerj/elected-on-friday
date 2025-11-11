@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>‘Elected on Friday, Assassinated on Saturday’: Text-Analyzing Political Assassinations</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a74871fe4945b66d259aafc266475145.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: black;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: black;
+background: #E69F0095;
+      }
+</style>
+
+
+<meta name="citation_title" content="&amp;amp;#039;Elected on Friday, Assassinated on Saturday': Text-Analyzing Political Assassinations">
+<meta name="citation_author" content="Jeff Jacobs">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Modern-Day American Imperialism: Middle East and Beyond;,citation_fulltext_html_url=https://chomsky.info/20080424/;">
+<meta name="citation_reference" content="citation_title=Challenging Historical Narratives: Dr. Gerald Horne on the Black Panther Party, Settler Colonialism, and America’s Political Landscape;,citation_abstract=Revisiting American History with Dr. Horne;,citation_author=Andy Ciccone;,citation_publication_date=2025-09;,citation_cover_date=2025-09;,citation_year=2025;,citation_fulltext_html_url=https://poorprolesalmanac.substack.com/p/challenging-historical-narratives;,citation_journal_title=The Poor Prole’s Almanac: Restoration Agroecology;">
+<meta name="citation_reference" content="citation_title=Political assassinations are not just an American problem – they have been all too frequent throughout history;,citation_abstract=Killing a prominent individual rarely brings about the widespread change the act is intended to achieve.;,citation_author=Matt Fitzpatrick;,citation_publication_date=2024-07;,citation_cover_date=2024-07;,citation_year=2024;,citation_fulltext_html_url=http://theconversation.com/political-assassinations-are-not-just-an-american-problem-they-have-been-all-too-frequent-throughout-history-234683;,citation_doi=10.64628/AA.5d9gesvfn;,citation_language=en-US;,citation_journal_title=The Conversation;">
+<meta name="citation_reference" content="citation_title=Black and Red: W. E. B. Du Bois and the Afro-American Response to the Cold War, 1944-1963;,citation_abstract=Many historians have seen a radical shift in W.E.B. Du Bois&amp;amp;amp;#39; political activities in his later years. Following World War II, the evolution of his political perspective led to his ouster from the National Association for the Advancement of Colored People, where he had worked for years, and the Justice Department&amp;#39;s indictment of him for failure to register as a foreign agent. In this extensively researched study, Gerald Horne shows that Du Bois&amp;#39; later activities were the culmination of his lifelong concerns, which Du Bois resolutely followed despite the threats of Cold War McCarthyism. In investigating Du Bois&amp;#39; last 20 years, Horne shows how the confluence of Cold War anticommunism and attempts to discredit the civil rights and anticolonial movements influenced the evaluation of Du Bois&amp;#39; activity. The recently opened papers of W.E.B. Du Bois and previously unexamined papers of the NAACP are among the new sources Horne examined for his study.;,citation_author=Gerald Horne;,citation_publication_date=1986-01;,citation_cover_date=1986-01;,citation_year=1986;,citation_isbn=978-0-88706-087-8;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Revolting Capital;,citation_abstract=There is a fundamental contradiction in U.S. Imperialism: the capital of this empire for decades has had a majority Black population, which-in turn-has created favorable conditions not only for the erosion of the pestilence that is racism but the flourishing of the antidote that is radicalism. In this sweeping history, Gerald Horne traces this phenomenon over a century, in a book which should be understood and studied by all anti-imperialist and progressive forces. This relatively small metropolis also has influenced profoundly its neighbors in Maryland and Virginia, especially in the potent area of labor organizing.;,citation_author=Gerald Horne;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_isbn=978-0-7178-0036-0;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=The White Pacific: U.S. Imperialism and Black Slavery in the South Seas after the Civil War;,citation_abstract=Worldwide supplies of sugar and cotton were impacted dramatically as the U.S. Civil War dragged on. New areas of production entered these lucrative markets, particularly in the South Pacific, and plantation agriculture grew substantially in disparate areas such as Australia, Fiji, and Hawaii. The increase in production required an increase in labor; in the rush to fill the vacuum, freebooters and other unsavory characters began a slave trade in Melanesians and Polynesians that continued into the twentieth century. The White Pacific ranges over the broad expanse of Oceania to reconstruct the history of &amp;amp;amp;quot;blackbirding&amp;quot; (slave trading) in the region. It examines the role of U.S. citizens (many of them ex-slaveholders and ex-confederates) in the trade and its roots in Civil War dislocations. What unfolds is a dramatic tale of unfree labor, conflicts between formal and informal empire, white supremacy, threats to sovereignty in Hawaii, the origins of a White Australian policy, and the rise of Japan as a Pacific power and putative protector. It also pieces together a wonderfully suggestive history of the African American presence in the Pacific. Based on deft archival research in Australia, New Zealand, Fiji, Hawaii, the United States, and Great Britain, The White Pacific uncovers a heretofore hidden story of race, labor, war, and intrigue that contributes significantly to the emerging intersectional histories of race and ethnicity.;,citation_author=Gerald Horne;,citation_publication_date=2007-05;,citation_cover_date=2007-05;,citation_year=2007;,citation_isbn=978-0-8248-6517-7;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Nemesis: The Last Days of the American Republic;,citation_abstract=In the stunning conclusion to his bestselling Blowback trilogy, Chalmers Johnson exposes the overreach of the American empire and its dire consequences for the republicIn his prophetic book Blowback, Chalmers Johnson linked the CIA’s clandestine activities abroad to disaster at home. In The Sorrows of Empire, he explored how the growth of American militarism and global garrisoning have jeopardized our stability. Now in Nemesis, Johnson reveals the ways in which imperial overstretch is undermining the republic itself, both economically and politically.Delving into new areas—from plans to militarize outer space to Constitution-breaking presidential activities at home and the devastating corruption of a toothless Congress—Nemesis offers a striking description of the trap into which the ambitions of America’s leaders have taken us. Drawing comparisons to empires past, Johnson explores in vivid detail the unintended consequences of our dependence on a permanent war economy.What does it mean when a nation’s main intelligence organization becomes the president’s secret army? Or when the world’s sole &amp;amp;amp;quot;hyperpower,&amp;quot; no longer capable of paying for its leaders’ vaulting ambitions, becomes the greatest hyper-debtor of all time? In his stunning conclusion, Johnson suggests that financial bankruptcy could herald the breakdown of constitutional government in America—a crisis that may ultimately prove to be the only path to a renewed nation.;,citation_author=Chalmers Johnson;,citation_publication_date=2007-02;,citation_cover_date=2007-02;,citation_year=2007;,citation_isbn=978-1-4299-0468-1;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=In Search of Liberty: African American Internationalism in the Nineteenth-Century Atlantic World;,citation_abstract=In Search of Liberty explores how African Americans, since the founding of the United States, have understood their struggles for freedom as part of the larger Atlantic world. The essays in this volume capture the pursuits of equality and justice by African Americans across the Atlantic World through the end of the nineteenth century, as their fights for emancipation and enfranchisement in the United States continued. This book illuminates stories of individual Black people striving to escape slavery in places like Nova Scotia, Louisiana, and Mexico and connects their eff orts to emigration movements from the United States to Africa and the Caribbean, as well as to Black abolitionist campaigns in Europe. By placing these diverse stories in conversation, editors Ronald Angelo Johnson and Ousmane K. Power-Greene have curated a larger story that is only beginning to be told. By focusing on Black internationalism in the eighteenth and nineteenth centuries, In Search of Liberty reveals that Black freedom struggles in the United States were rooted in transnational networks much earlier than the better-known movements of the twentieth century.;,citation_author=Ronald Angelo Johnson;,citation_author=Ousmane K. Power-Greene;,citation_publication_date=2021-07;,citation_cover_date=2021-07;,citation_year=2021;,citation_isbn=978-0-8203-6009-6;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=How the U.S. Issued its First Ever Order to Assassinate a Foreign Leader;,citation_abstract=A snub from the White House, a controversial stay at Blair House, an encounter with Dave Chappelle’s mother and a CIA-arranged tryst — what happened when Congo’s beleaguered leader visited D.C. in 1960.;,citation_author=Stuart A. Reid;,citation_publication_date=2023-10;,citation_cover_date=2023-10;,citation_year=2023;,citation_fulltext_html_url=https://www.politico.com/news/magazine/2023/10/17/patrice-lumumba-congo-washington-00121755;,citation_language=en-US;,citation_journal_title=POLITICO;">
+<meta name="citation_reference" content="citation_title=The Lumumba Plot: The Secret History of the CIA and a Cold War Assassination;,citation_abstract=The New York Times Book Review Editors’ Choice $\bullet$ A spellbinding work of history that reads like a Cold War spy thriller—about the U.S.-sanctioned plot to assassinate the democratically elected leader of the newly independent CongoA BEST BOOK OF THE YEAR: The New Yorker, The Economist, Financial Times“This is one of the best books I have read in years . . . gripping, full of colorful characters, and strange plot twists.” —Fareed Zakaria, CNN hostIt was supposed to be a moment of great optimism, a cause for jubilation. The Congo was at last being set free from Belgium—one of seventeen countries to gain independence in 1960 from ruling European powers. At the helm as prime minister was charismatic nationalist Patrice Lumumba. Just days after the handover, however, the Congo’s new army mutinied, Belgian forces intervened, and Lumumba turned to the United Nations for help in saving his newborn nation from what the press was already calling “the Congo crisis.” Dag Hammarskjöld, the tidy Swede serving as UN secretary-general, quickly arranged the organization’s biggest peacekeeping mission in history. But chaos was still spreading. Frustrated with the fecklessness of the UN and spurned by the United States, Lumumba then approached the Soviets for help—an appeal that set off alarm bells at the CIA. To forestall the spread of Communism in Africa, the CIA sent word to its station chief in the Congo, Larry Devlin: Lumumba had to go.Within a year, everything would unravel. The CIA plot to murder Lumumba would fizzle out, but he would be deposed in a CIA-backed coup, transferred to enemy territory in a CIA-approved operation, and shot dead by Congolese assassins. Hammarskjöld, too, would die, in a mysterious plane crash en route to negotiate a cease-fire with the Congo’s rebellious southeast. And a young, ambitious military officer named Joseph Mobutu, who had once sworn fealty to Lumumba, would seize power with U.S. help and misrule the country for more than three decades. For the Congolese people, the events of 1960–61 represented the opening chapter of a long horror story. For the U.S. government, however, they provided a playbook for future interventions.;,citation_author=Stuart A. Reid;,citation_publication_date=2023-10;,citation_cover_date=2023-10;,citation_year=2023;,citation_isbn=978-1-5247-4881-4;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=You Can’t Kill a Man Because of the Books He Reads: Angelo Herndon’s Fight for Free Speech;,citation_abstract=The story of a young, Black Communist Party organizer wrongly convicted of attempting to incite insurrection and the landmark case that made him a civil rights hero. Decades before the impeachment of an American president for a similar offense, Angelo Herndon was charged under Georgia law with “attempting to incite insurrection”—a crime punishable by death. In 1932, the eighteen-year-old Black Communist Party organizer was arrested and had his room illegally searched and his radical literature seized. Charged under an old slave insurrection statute, Herndon was convicted by an all-white jury and sentenced to eighteen to twenty years on a chain gang. You Can’t Kill a Man Because of the Books He Reads chronicles Herndon’s five-year quest for freedom during a time when Blacks, white liberals, and the radical left joined forces to define the nation’s commitment to civil rights and civil liberties. Herndon’s champions included the young, Black Harvard Law School–educated attorney Benjamin J. Davis Jr.; the future historian C. Vann Woodward, who joined the interracial Herndon defense committee; the white-shoe New York lawyer Whitney North Seymour, who argued Herndon’s appeals; and literary friends Ralph Ellison, Langston Hughes, and Richard Wright. With their support, Herndon won his freedom and reinvented himself as a Harlem literary star until a dramatic fall from grace. A legal odyssey of Herndon’s narrow escape from certain death because of his unpopular political beliefs, You Can’t Kill a Man Because of the Books He Reads explores Herndon’s journey from Alabama coal miner to Communist Party organizer to Harlem hero and beyond. Brad Snyder tells the stories of the diverse coalition of people who rallied to his cause and who twice appealed his case to the U.S. Supreme Court. They forced the Court to recognize free speech and peaceable assembly as essential rights in a democracy—a landmark decision in 1930s America as well as today.;,citation_author=Brad Snyder;,citation_publication_date=2025-02;,citation_cover_date=2025-02;,citation_year=2025;,citation_isbn=978-1-324-03655-5;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=States are becoming more brazen about killing foes abroad;,citation_author=The Economist;,citation_fulltext_html_url=https://www.economist.com/international/2023/09/26/states-are-becoming-more-brazen-about-killing-foes-abroad;,citation_issn=0013-0613;,citation_journal_title=The Economist;">
+<meta name="citation_reference" content="citation_title=White Malice: The CIA and the Covert Recolonization of Africa;,citation_abstract=Filled with “fascinating information, original research, and bold ideas” (NPR), a revelatory account of how African Independence was systematically undermined by the US &nbsp; In 1958 in Accra, Ghana, the Hands Off Africa conference brought together the leading figures of African independence in a public show of political strength and purpose. The charismatic Kwame Nkrumah, who had just won Ghana’s independence, led a determined appeal for Pan-Africanism. &nbsp;Young, idealistic leaders across the continent, as well as African Americans seeking civil rights at home, heeded his call. Yet, a moment that signified a new era of African freedom simultaneously marked a new era of foreign intervention and control. In White Malice, Susan Williams unearths the CIA’s covert operations from Ghana to the Congo to the UN, which frustrated the attempts of Africa’s new generation of nationalist leaders to establish democratic governance. These revelations dramatically upend the conventional wisdom that African nations failed to establish effective, democratic states on their own accord. As the old European powers moved out, the US moved in.&nbsp;&nbsp; Drawing on original research and recently declassified documents, Williams introduces readers to idealistic African leaders and to the secret agents, ambassadors, and even presidents who deliberately worked against them, forever altering the future of a continent.;,citation_author=Susan Williams;,citation_publication_date=2021-08;,citation_cover_date=2021-08;,citation_year=2021;,citation_isbn=978-1-5417-6828-4;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=When America Helped Assassinate an African Leader;,citation_abstract=The murder of independent Congo’s first prime minister, the subject of a new book, had lasting psychological effects on the whole continent.;,citation_author=Michela Wrong;,citation_publication_date=2023-10;,citation_cover_date=2023-10;,citation_year=2023;,citation_fulltext_html_url=https://www.theatlantic.com/books/archive/2023/10/patrice-lumumba-plot-book-assassination-death/675732/;,citation_language=en-US;,citation_journal_title=The Atlantic;">
+<meta name="citation_reference" content="citation_title=President;,citation_author=Wyclef Jean;,citation_publication_date=2004;,citation_cover_date=2004;,citation_year=2004;">
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">‘Elected on Friday, Assassinated on Saturday’: Text-Analyzing Political Assassinations</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Author</div>
+          <div class="quarto-title-meta-heading">Affiliation</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Jeff Jacobs </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Georgetown University Department of Data Science and McCourt School of Public Policy
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></p></div></div></div>
+    </div>
+
+
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#corpus" id="toc-corpus" class="nav-link" data-scroll-target="#corpus">Corpus</a></li>
+  </ul>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="corpus_simple_qmd/1956-04-01_our-struggle-preview.html"><i class="bi bi-journal-code"></i>1956-04-01_our-struggle.qmd</a></li><li><a href="corpus_simple_qmd/1956-12-03_new-age-preview.html"><i class="bi bi-journal-code"></i>1956-12-03_new-age.qmd</a></li><li><a href="corpus_simple_qmd/1957-06-24_nonviolence-preview.html"><i class="bi bi-journal-code"></i>1957-06-24_nonviolence.qmd</a></li><li><a href="corpus_simple_qmd/1959-05-20_youth-march-preview.html"><i class="bi bi-journal-code"></i>1959-05-20_youth-march.qmd</a></li><li><a href="corpus_simple_qmd/1959-07-01_land-of-gandhi-preview.html"><i class="bi bi-journal-code"></i>1959-07-01_land-of-gandhi.qmd</a></li><li><a href="corpus_simple_qmd/1959-10-01_social-nonviolence-preview.html"><i class="bi bi-journal-code"></i>1959-10-01_social-nonviolence.qmd</a></li><li><a href="corpus_simple_qmd/1960-04-13_pilgrimage-preview.html"><i class="bi bi-journal-code"></i>1960-04-13_pilgrimage.qmd</a></li><li><a href="corpus_simple_qmd/1961-09-10_time-for-freedom-preview.html"><i class="bi bi-journal-code"></i>1961-09-10_time-for-freedom.qmd</a></li><li><a href="corpus_simple_qmd/1963-04-16_birmingham-jail-preview.html"><i class="bi bi-journal-code"></i>1963-04-16_birmingham-jail.qmd</a></li><li><a href="corpus_simple_qmd/1963-08-28_dream-preview.html"><i class="bi bi-journal-code"></i>1963-08-28_dream.qmd</a></li><li><a href="corpus_simple_qmd/1963-09-18_eulogy-preview.html"><i class="bi bi-journal-code"></i>1963-09-18_eulogy.qmd</a></li><li><a href="corpus_simple_qmd/1964-12-10_nobel-prize-preview.html"><i class="bi bi-journal-code"></i>1964-12-10_nobel-prize.qmd</a></li><li><a href="corpus_simple_qmd/1964-12-11_nobel-lecture-preview.html"><i class="bi bi-journal-code"></i>1964-12-11_nobel-lecture.qmd</a></li><li><a href="corpus_simple_qmd/1965-03-25_marching-on-preview.html"><i class="bi bi-journal-code"></i>1965-03-25_marching-on.qmd</a></li><li><a href="corpus_simple_qmd/1966-10-01_nonviolence-only-road-preview.html"><i class="bi bi-journal-code"></i>1966-10-01_nonviolence-only-road.qmd</a></li><li><a href="corpus_simple_qmd/1967-04-04_break-silence-preview.html"><i class="bi bi-journal-code"></i>1967-04-04_break-silence.qmd</a></li><li><a href="corpus_simple_qmd/1967-06-11_black-power-preview.html"><i class="bi bi-journal-code"></i>1967-06-11_black-power.qmd</a></li><li><a href="corpus_simple_qmd/1967-08-16_where-do-we-go-preview.html"><i class="bi bi-journal-code"></i>1967-08-16_where-do-we-go.qmd</a></li><li><a href="corpus_simple_qmd/1968-02-04_drum-major-preview.html"><i class="bi bi-journal-code"></i>1968-02-04_drum-major.qmd</a></li><li><a href="corpus_simple_qmd/1968-04-03_promised-land-preview.html"><i class="bi bi-journal-code"></i>1968-04-03_promised-land.qmd</a></li><li><a href="corpus-preview.html"><i class="bi bi-journal-code"></i>Corpus</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<blockquote class="blockquote">
+<p><em>If I was president, I’d get elected on Friday, assassinated on Saturday, buried on Sunday, then go back to work on Monday.</em></p>
+<p><span class="citation" data-cites="wyclefjean_president_2004">Wyclef Jean (<a href="#ref-wyclefjean_president_2004" role="doc-biblioref">2004</a>)</span></p>
+</blockquote>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>Corpus of texts <a href="./corpus-preview.html">here</a>.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-wyclefjean_president_2004" class="csl-entry" role="listitem">
+Wyclef Jean. 2004. <span>“President.”</span>
+</div>
+</div>
+</section>
+<section id="corpus" class="level2">
+<h2 class="anchored" data-anchor-id="corpus">Corpus</h2>
+<div id="corpus">
+
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
