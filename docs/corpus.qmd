@@ -1,0 +1,6 @@
+---
+title: "Corpus"
+listing:
+  contents:
+    - corpus_simple/*.txt
+---

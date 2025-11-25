@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.8.25">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <title>pilgrimage</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "../index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="../site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a74871fe4945b66d259aafc266475145.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+     
+      </head>
+
+  <body class="quarto-notebook quarto-light">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> 1960-04-13_pilgrimage.qmd</h6>
+
+            <a href="../corpus_simple_qmd/1960-04-13_pilgrimage.qmd" class="btn btn-primary quarto-download-embed" download="1960-04-13_pilgrimage.qmd">Download Source</a>
+          </div>
+
+     <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">    <p>Pilgrimage to Nonviolence</p>
+<p>Ten years ago I was just entering my senior year in theological seminary. Like most theological students I was engaged in the exciting job of studying various theological theories. Having been raised in a rather strict fundamentalistic tradition, I was occasionally shocked as my intellectual journey carried me through new and sometimes complex doctrinal lands. But despite the shock the pilgrimage was always stimulating, and it gave me a new appreciation for objective appraisal and critical analysis. My early theological training did the same for me as the reading of Hume did for Kant: it knocked me out of my dogmatic slumber.</p>
+<p>At this stage of my development I was a thoroughgoing liberal. Liberalism provided me with an intellectual satisfaction that I could never find in fundamentalism. I became so enamored of the insights of liberalism that I almost fell into the trap of accepting uncritically everything that came under its name. I was absolutely convinced of the natural goodness of man and the natural power of human reason. I</p>
+<p>The basic change in my thinking came when I began to question some of the theories that had been associated with so-called liberal theology. Of course there is one phase of liberalism that I hope to cherish always: its devotion to the search for truth, its insistence on an open and analytical mind, its refusal to abandon the best light of reason. Liberalism’s contribution to the philological-historical criticism of biblical literature has been of immeasurable value and should be defended with religious and scientific passion.</p>
+<p>It was mainly the liberal doctrine of man that I began to question. The more I observed the tragedies of history and man’s shameful inclination to choose the low road, the more I came to see the depths and strength of sin. My reading of the works of Reinhold Niebuhr made me aware of the complexity of human motives and the reality of sin on every level of man’s existence. Moreover, I came to recognize the complexity of man’s social involvement and the glaring reality of collective evil. I came to feel that liberalism had been all too sentimental concerning human nature and that it leaned toward a false idealism.</p>
+<p>I also came to see that liberalism’s superficial optimism concerning human nature caused it to overlook the fact that reason is darkened by sin. The more I thought about human nature the more I saw how our tragic inclination for sin causes us to use our minds to rationalize our actions. Liberalism failed to see that reason by itself is little more than an instrument to justify man’s defensive ways of thinking. Reason, devoid of purifying power of faith, can never free itself from distortions and rationalizations.</p>
+<p>In spite of the fact that I had to reject some aspects of liberalism, I never came to an all-out acceptance of neo-orthodoxy. While I saw neo-orthodoxy as a helpful corrective for a liberalism that had become all too sentimental, I never felt that it provided an adequate answer to the basic questions. If liberalism was too optimistic concerning human nature, neo-orthodoxy was too pessimistic. Not only on the question of man but also on other vital issues neo-orthodoxy went too far in its revolt. In its attempt to preserve the transcendence of God, which had been neglected by liberalism’s overstress of his immanence, neo-orthodoxy went to the extreme of stressing a God who was hidden, unknown and “wholly other.” In its revolt against liberalism’s overemphasis on the power of reason, neo-orthodoxy fell into a mood of antirationalism and semifundamentalism, stressing a narrow, uncritical biblicism. This approach, I felt, was inadequate both for the church and for personal life.</p>
+<p>So although liberalism left me unsatisfied on the question of the nature of man, I found no refuge in neo-orthodoxy. I am now convinced that the truth about man is found neither in liberalism nor in neo-orthodoxy. Each represents a partial truth. A large segment of Protestant liberalism defined man only in terms of his essential nature, his capacity for good. Neo-orthodoxy tended to define man only in terms of his existential nature, his capacity for evil. An adequate understanding of man is found neither in the thesis of liberalism nor in the antithesis of neo-orthodoxy, but in a synthesis which reconciles the truths of both.</p>
+<p>During the past decade I also gained a new appreciation for the philosophy of existentialism. My first contact with this philosophy came through my reading of Kierkegaard and Nietzsche. Later I turned to a study of Jaspers, Heidegger and Sartre. All of these thinkers stimulated my thinking; while finding things to question in each, I nevertheless learned a great deal from study of them. When I finally turned to a serious study of the works of Paul Tillich I became convinced that existentialism, in spite of the fact that it had become all too fashionable, had grasped certain basic truths about man and his condition that could not be permanently overlooked.</p>
+<p>Its understanding of the “finite freedom” of man is one of existentialism’s most lasting contributions, and its perception of the anxiety and conflict produced in man’s personal and social life as a result of the perilous and ambiguous structure of existence is especially meaningful for our time. The common point in all existentialism, whether it is atheistic or theistic, is that man’s existential situation is a state of estrangement from his essential nature. In their revolt against Hegel’s essentialism, all existentialists contend that the world is fragmented. History is a series of unreconciled conflicts and man’s existence is filled with anxiety and threatened with meaninglessness. While the ultimate Christian answer is not found in any of these existential assertions, there is much here that the theologian can use to describe the true state of man’s existence.</p>
+<p>Although most of my formal study during this decade has been in systematic theology and philosophy, I have become more and more interested in social ethics. Of course my concern for social problems was already substantial before the beginning of this decade. From my early teens in Atlanta I was deeply concerned about the problem of racial injustice. I grew up abhorring segregation, considering it both rationally inexplicable and morally unjustifiable. I could never accept the fact of having to go to the back of a bus or sit in the segregated section of a train. The first time that I was seated behind a curtain in a dining car I felt as if the curtain had been dropped on my selfhood. I had also learned that the inseparable twin of racial injustice is economic injustice. I saw how the systems of segregation ended up in the exploitation of the Negro as well as the poor whites. Through these early experiences I grew up deeply conscious of the varieties of injustice in our society. II</p>
+<p>Not until I entered theological seminary, however, did I begin a serious intellectual quest for a method to eliminate social evil. I was immediately influenced by the social gospel. In the early fifties I read Rauschenbusch’s Christianity and the Social Crisis, a book which left an indelible imprint on my thinking. Of course there were points at which I differed with Rauschenbusch. I felt that he had fallen victim to the nineteenth century “cult of inevitable progress,” which led him to an unwarranted optimism concerning human nature. Moreover, he came perilously close to identifying the kingdom of God with a particular social and economic system—a temptation which the church should never give in to. But in spite of these shortcomings Rauschenbusch gave to American Protestantism a sense of social responsibility that it should never lose. The gospel at its best deals with the whole man, not only his soul but his body, not only his spiritual well-being, but his material well-being. Any religion that professes to be concerned about the souls of men and is not concerned about the slums that damn them, the economic conditions that strangle them and the social conditions that cripple them is a spiritually moribund religion awaiting burial.</p>
+<p>After reading Rauschenbusch I turned to a serious study of the social and ethical theories of the great philosophers. During this period I had almost despaired of the power of love in solving social problems. The “turn the other cheek” philosophy and the “love your enemies” philosophy are only valid, I felt, when individuals are in conflict with other individuals; when racial groups and nations are in conflict a more realistic approach is necessary. Then I came upon the life and teachings of Mahatma Gandhi. As I read his works I became deeply fascinated by his campaigns of nonviolent resistance. The whole Gandhian concept of satyagraha (satya is truth which equals love, and graha is force; satyagraha thus means truth-force or love-force) was profoundly significant to me. As I delved deeper into the philosophy of Gandhi my skepticism concerning the power of love gradually diminished, and I came to see for the first time that the Christian doctrine of love operating through the Gandhian method of nonviolence was one of the most potent weapons available to oppressed people in their struggle for freedom. At this time, however, I had a merely intellectual understanding and appreciation of the position, with no firm determination to organize it in a socially effective situation.</p>
+<p>When I went to Montgomery, Alabama, as a pastor in 1954, I had not the slightest idea that I would later become involved in a crisis in which nonviolent resistance would be applicable. After I had lived in the community about a year, the bus boycott began. The Negro people of Montgomery, exhausted by the humiliating experiences that they had constantly faced on the buses, expressed in a massive act of noncooperation their determination to be free. They came to see that it was ultimately more honorable to walk the streets in dignity than to ride the buses in humiliation. At the beginning of the protest the people called on me to serve as their spokesman. In accepting this responsibility my mind, consciously or unconsciously, was driven back to the Sermon on the Mount and the Gandhian method of nonviolent resistance. This principle became the guiding light of our movement. Christ furnished the spirit and motivation while Gandhi furnished the method.</p>
+<p>The experience in Montgomery did more to clarify my thinking on the question of nonviolence than all of the books that I had read. As the days unfolded I became more and more convinced of the power of nonviolence. Living through the actual experience of the protest, nonviolence became more than a method to which I gave intellectual assent; it became a commitment to a way of life. Many issues I had not cleared up intellectually concerning nonviolence were now solved in the sphere of practical action.</p>
+<p>A few months ago I had the privilege of traveling to India. The trip had a great impact on me personally and left me even more convinced of the power of nonviolence. It was a marvelous thing to see the amazing results of a nonviolent struggle. India won her independence, but without violence on the part of Indians. The aftermath of hatred and bitterness that usually follows a violent campaign is found nowhere in India. Today a mutual friendship based on complete equality exists between the Indian and British people within the commonwealth.</p>
+<p>I do not want to give the impression that nonviolence will work miracles overnight. Men are not easily moved from their mental ruts or purged of their prejudiced and irrational feelings. When the underprivileged demand freedom, the privileged first react with bitterness and resistance. Even when the demands are couched in nonviolent terms, the initial response is the same. I am sure that many of our white brothers in Montgomery and across the South are still bitter toward Negro leaders, even though these leaders have sought to follow a way of love and nonviolence. So the nonviolent approach does not immediately change the heart of the oppressor. It first does something to the hearts and souls of those committed to it. It gives them new self-respect; it calls up resources of strength and courage that they did not know they had. Finally, it reaches the opponent and so stirs his conscience that reconciliation becomes a reality. III</p>
+<p>During recent months I have come to see more and more the need for the method of nonviolence in international relations. While I was convinced during my student days of the power of nonviolence in group conflicts within nations, I was not yet convinced of its efficacy in conflicts between nations. I felt that while war could never be a positive or absolute good, it could serve as a negative good in the sense of preventing the spread and growth of an evil force. War, I felt, horrible as it is, might be preferable to surrender to a totalitarian system. But more and more I have come to the conclusion that the potential destructiveness of modern weapons of war totally rules out the possibility of war ever serving again as a negative good. If we assume that mankind has a right to survive then we must find an alternative to war and destruction. In a day when sputniks dash through outer space and guided ballistic missiles are carving highways of death through the stratosphere, nobody can win a war. The choice today is no longer between violence and nonviolence. It is either nonviolence or nonexistence.</p>
+<p>I am no doctrinaire pacifist. I have tried to embrace a realistic pacifism. Moreover, I see the pacifist position not as sinless but as the lesser evil in the circumstances. Therefore I do not claim to be free from the moral dilemmas that the Christian nonpacifist confronts. But I am convinced that the church cannot remain silent while mankind faces the threat of being plunged into the abyss of nuclear annihilation. If the church is true to its mission it must call for an end to the arms race.</p>
+<p>In recent months I have also become more and more convinced of the reality of a personal God. True, I have always believed in the personality of God. But in past years the idea of a personal God was little more than a metaphysical category which I found theologically and philosophically satisfying. Now it is a living reality that has been validated in the experiences of everyday life. Perhaps the suffering, frustration and agonizing moments which I have had to undergo occasionally as a result of my involvement in a difficult struggle have drawn me closer to God. Whatever the cause, God has been profoundly real to me in recent months. In the midst of outer dangers I have felt an inner calm and known resources of strength that only God could give. In many instances I have felt the power of God transforming the fatigue of despair into the buoyancy of hope. I am convinced that the universe is under the control of a loving purpose and that in the struggle for righteousness man has cosmic companionship. Behind the harsh appearances of the world there is a benign power. To say God is personal is not to make him an object among other objects or attribute to him the finiteness and limitations of human personality; it is to take what is finest and noblest in our consciousness and affirm its perfect existence in him. It is certainly true that human personality is limited, but personality as such involves no necessary limitations. It simply means self-consciousness and self-direction. So in the truest sense of the word, God is a living God. In him there is feeling and will, responsive to the deepest yearnings of the human heart: thus God both evokes and answers prayers.</p>
+<p>The past decade has been a most exciting one. In spite of the tensions and uncertainties of our age something profoundly meaningful has begun. Old systems of exploitation and oppression are passing away and new systems of justice and equality are being born. In a real sense ours is a great time in which to be alive. Therefore I am not yet discouraged about the future. Granted that the easygoing optimism of yesterday is impossible. Granted that we face a world crisis which often leaves us standing amid the surging murmur of life’s restless sea. But every crisis has both its dangers and its opportunities. Each can spell either salvation or doom. In a dark, confused world the spirit of God may yet reign supreme.</p>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>  </div> <!-- /content --> 
+  
+</body></html>
