@@ -200,6 +200,28 @@ Political Assassinations}
 \date{}
 \begin{document}
 \maketitle
+\begin{abstract}
+In the historiography of political thought, radical thinkers are often
+characterized as those who ``push the boundaries'' of the range of
+acceptable ideas and opinions in a given society at a given time. While
+formal modeling of strategic ``spatial voting'' in political science has
+led to influential results like the Median Voter Theorem, less work has
+been devoted to assessing strategic behavior among political thinkers at
+the ``margins'' of political thought, whose aim is not to
+\emph{represent} public opinion (and thus win votes) but to
+\emph{influence it}. In this work, therefore, we posit a ``Median
+Survivor Theorem'', a point on a given ideological spectrum beyond which
+influential political thinkers are vastly more likely to be
+assassinated, and then estimate this point via a text-analysis of the
+topical trajectory of prominent radical thinkers' speeches before and
+after assassination \emph{attempts} and, especially, before successful
+assassinations. After demonstrating the efficacy of this approach in
+terms of ability to predict assassinations from textual content, we zoom
+in on individual cases, measuring the ideological dissimilarities
+between thinkers' public and private statements and assessing the degree
+to which their public ``position-taking'' exhibited strategic
+compromises with broader social-discursive boundaries.
+\end{abstract}
 
 
 \begin{quote}
@@ -211,9 +233,64 @@ Wyclef Jean (2004)
 
 \subsection{Introduction}\label{introduction}
 
-\subsection{Data}\label{data}
+Spatial metaphors abound in the historiography of political thought.
+Political scientists, for example, often employ the notion of an
+``Overton Window'' to denote the range of acceptable ideas and opinions
+within a given society at a given time, such that ``radical'' thinkers
+can be characterized in turn as those who push the boundaries of this
+range.
 
-Corpus of texts \href{corpus.qmd}{here}.
+These metaphors then underlie a slew of formal and empirical research
+endeavors in the social sciences, such as ``ideal point estimation''
+(Poole and Rosenthal 1985), whereby voters' positions along the Overton
+Window are represented as points on the real numberline
+(\(\mathbb{R}\)), while electoral candidates strategically choose
+platform positions with respect to the range of their constituents'
+ideological points. Several influential results emerge from this
+framework, such as the Median Voter Theorem, which states that two
+``rational'' candidates competing for votes from the same constituency
+will adopt nearly-identical platforms (differing by an
+infinitesimally-small magnitude \(\varepsilon\)), at exactly the median
+of their constituents' ideological points in \(\mathbb{R}\), since any
+move away from this point will reduce the proportion of captured
+candidates below 50\%.
+
+In this work, we employ this framework to analyze the \emph{strategy} of
+radical thinkers, and find that indeed there is a ``Median Radicalism''
+point whereby those thinkers whose speech moves beyond this point
+drastically increase their likelihood of being assassinated. After
+presenting our methodology and findings, we then use more ``in-depth'',
+small-\(N\) evidence to assess the degree to which radical thinkers make
+these strategic choices in a \emph{conscious} manner: that is, the
+extent to which broader cultural \emph{``enforcement''} of the Overton
+Window (e.g., in media or activist discourse), in conjunction with the
+fear of assassination, leads such thinkers to curb their radicalism in
+public statements relative to their private writings (e.g., in personal
+journals or correspondence with fellow radical thinkers).
+
+\subsection{Data (MVP Version)}\label{data-mvp-version}
+
+As an instance of developing a ``Minimum Viable Product'' (MVP), we
+begin our study in an exploratory mode. We operationalize popular
+notions that Martin Luther King's foray into particular strands of
+discourse -- concretely, his increasingly-urgent calls to his
+constituency to focus on and oppose the United States' genocides in
+Vietnam and Indochina more broadly -- ``led to'' his
+assassination\footnote{Our emphasis in this initial stage thus
+  ``dovetails'' with a related body of historical research on the tactic
+  of nonviolence in the 1960s Civil Rights struggle. See, especially,
+  Cobb (2014).}. At this stage, however, we also note that ``stopping''
+with just the single case of Martin Luther King would subject our study
+to the bias of \emph{selection on the dependent variable}. Thus, while
+we choose cases more methodically in \textbf{?@sec-methods} using a
+statistical matching approach, here we choose Black Panther Party
+chairman Huey Newton as our ``control'' case (Newton 1973), as a
+political thinker whose radical thought also brought him to the
+forefront of the black liberation movement only a few years after King's
+murder, but who was not assassinated until decades later\footnote{Newton
+  was murdered in 1989, at the age of 47, in Oakland, California.}.
+
+\subsection{Methodology}\label{methodology}
 
 \subsection{Results}\label{results}
 
@@ -223,6 +300,20 @@ Corpus of texts \href{corpus.qmd}{here}.
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-cobb_this_2014}
+Cobb, Charles E. 2014. \emph{This {Nonviolent Stuff}'ll {Get You
+Killed}: {How Guns Made} the {Civil Rights Movement Possible}}. Basic
+Books.
+
+\bibitem[\citeproctext]{ref-newton_revolutionary_1973}
+Newton, Huey P. 1973. \emph{Revolutionary {Suicide}: ({Penguin Classics
+Deluxe Edition})}. Penguin.
+
+\bibitem[\citeproctext]{ref-poole_spatial_1985}
+Poole, Keith T., and Howard Rosenthal. 1985. {``A {Spatial Model} for
+{Legislative Roll Call Analysis}.''} \emph{American Journal of Political
+Science} 29 (2): 357--84. \url{https://doi.org/10.2307/2111172}.
+
 \bibitem[\citeproctext]{ref-wyclefjean_president_2004}
 Wyclef Jean. 2004. {``President.''}
 
